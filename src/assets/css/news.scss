@@ -1,0 +1,89 @@
+.news-page {
+  margin: 0 auto;
+}
+body .banner {
+  height: 610px;
+  background: url("../images/news/newsbanner.png") no-repeat;
+  background-size: cover;
+}
+body .newslist {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+body .newslist .list {
+  margin-top: 83px;
+}
+body .newslist .list:nth-of-type(1) {
+  margin-top: 0;
+}
+body .newslist .list .yearmonth {
+  font-size: 20px;
+  font-weight: 400;
+}
+body .newslist .list > hr {
+  margin: 0 auto;
+  margin-top: 21px;
+  margin-bottom: 27px;
+}
+body .newslist .list .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  min-height: 200px;
+}
+body .newslist .list .content .pic {
+  width: 373px;
+  height: 165px;
+  background: url("../images/news/newslistpic1.png") no-repeat;
+  background-size: cover;
+}
+body .newslist .list .content .words .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  cursor: pointer;
+}
+body .newslist .list .content .words .title:hover {
+  color: #d7292b;
+}
+body .newslist .list .content .words .date {
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: 25px;
+  color: #666666;
+}
+body .newslist .list .content .words > p {
+  font-size: 14px;
+  font-weight: 100;
+  color: #666666;
+  line-height: 24px;
+  width: 860px;
+  max-width: 860px;
+}
+body .newslist .list .content .words > button {
+  background-color: transparent;
+  border: none;
+  color: #a37f01;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+body .newslist .watchmore {
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  width: 191px;
+  height: 57px;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+body .newslist .watchmore:hover {
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+}

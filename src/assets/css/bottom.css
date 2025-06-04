@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.bottom {
+  height: 250px;
+  background-color: #97744a;
+  display: flex;
+}
+.bottom > .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.qrcode {
+  display: flex;
+}
+.qrcode > div {
+  width: 135px;
+  height: 135px;
+  background: white;
+  position: relative;
+}
+.qrcode > .wechatcode {
+  background: url("../images/wechatqrcode.png") no-repeat;
+  background-size: cover;
+}
+.qrcode > .wechatcode::after {
+  content: "官方微信";
+  margin: 0 auto;
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  width: 50px;
+  height: 12px;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: transparent;
+  color: #e9e6e2;
+}
+.qrcode > .weibocode {
+  background: url("../images/weiboqrcode.png") no-repeat;
+  background-size: cover;
+  margin-left: 90px;
+}
+.qrcode > .weibocode::after {
+  content: "官方微博";
+  margin: 0 auto;
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  width: 50px;
+  height: 12px;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: transparent;
+  color: #e9e6e2;
+}
+
+.contentinfo {
+  margin-left: 100px;
+}
+.contentinfo > p {
+  font-size: 12px;
+  color: #e9e6e2;
+  font-weight: 100;
+  line-height: 20px;
+}/*# sourceMappingURL=bottom.css.map */

@@ -1,0 +1,139 @@
+body {
+    margin: 0 auto;
+    .onlineappointment {
+        .banner {
+            // width: 100vw;
+            height: 610px;
+            background: url("../images/onlineappointment/appointmentbanner.png") no-repeat;
+            background-size: cover;
+        }
+        .online-ap {
+            margin: 0 auto;
+            padding-top: 105px;
+            .title {
+                width: 247px;
+                height: 61px;
+                margin: 0 auto;
+
+                background-color: #d7292b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                color: white;
+                font-size: 30px;
+                & > div {
+                    width: 271px;
+                    height: 58px;
+                    border: 1px solid #97744a;
+                    position: absolute;
+                    top: -10px;
+                    left: -11px;
+                    z-index: -1;
+                }
+            }
+            .departments {
+                width: 1240px;
+                height: 620px;
+                margin: 0 auto;
+                .list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    margin-top: 77px;
+                    .icon {
+                        position: relative;
+                        cursor: pointer;
+                        transition: box-shadow 0.3s ease-in-out;
+                        &:hover {
+                            box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+                        }
+                        &:nth-of-type(1) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -6px 0;
+                        }
+                        &:nth-of-type(2) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -210px 0;
+                        }
+                        &:nth-of-type(3) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -411px 0;
+                        }
+                        &:nth-of-type(4) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -615px 0;
+                        }
+                        &:nth-of-type(5) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -820px 0;
+                        }
+                        &:nth-of-type(6) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -1024px 0;
+                        }
+                        &:nth-of-type(7) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -6px 0;
+                        }
+                        &:nth-of-type(8) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -210px 0;
+                        }
+                        &:nth-of-type(9) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -411px 0;
+                        }
+                        &:nth-of-type(10) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -615px 0;
+                        }
+                        &:nth-of-type(11) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -820px 0;
+                        }
+                        &:nth-of-type(12) {
+                            width: 181px;
+                            height: 181px;
+                            background: url("../images/onlineappointment/xuebi.png") no-repeat;
+                            background-position: -1024px 0;
+                        }
+                        & > p {
+                            margin: 0 auto;
+                            position: absolute;
+                            left: 50%;
+                            bottom: 10%;
+                            transform: translate(-50%, 0);
+                            font-size: 16px;
+                            color: #211501;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+.introduce-page {
+  margin: 0 auto;
+}
+
+body .introduce {
+  margin: 0 auto;
+}
+
+body .introduce .topbanner {
+  height: 610px;
+  background: url("../images/introduce/introduce-banner.png") no-repeat;
+  background-size: cover;
+}
+
+body .introduce .banner2 {
+  height: 950px;
+  background-image: url("../images/introduce/bg2-left.png"), url("../images/introduce/bg2-right.png");
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+}
+
+body .introduce .banner2 .culture {
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 112px;
+}
+
+body .introduce .banner2 .culture .content {
+  font-family: "微软雅黑", sans-serif;
+  font-size: 20px;
+  line-height: 72px;
+  color: #616161;
+  writing-mode: vertical-rl;
+  font-weight: 100;
+  margin-right: 42px;
+}
+
+body .introduce .banner2 .culture .words {
+  display: flex;
+  height: 100%;
+}
+
+body .introduce .banner2 .culture .words .word1 {
+  writing-mode: vertical-rl;
+  width: 112px;
+  border-left: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body .introduce .banner2 .culture .words .word1:nth-of-type(1), body .introduce .banner2 .culture .words .word1:nth-of-type(2) {
+  font-size: 30px;
+  font-family: "FZLTCHJW", sans-serif;
+  font-weight: 700;
+}
+
+body .introduce .banner2 .culture .words .word1:nth-of-type(3) {
+  font-size: 28px;
+  font-family: "黑体", sans-serif;
+  font-weight: 100;
+  margin-top: 10px;
+  border-right: 1px solid black;
+}
+
+body .introduce .banner2 .culture .title {
+  width: 48px;
+  height: 100%;
+  background: url("../images/introduce/culture.png") no-repeat;
+  background-size: contain;
+  margin-left: 70px;
+  position: relative;
+}
+
+body .introduce .banner2 .culture .title .icon {
+  width: 75px;
+  height: 75px;
+  background: url("../images/introduce/zhongyi.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+body .introduce .banner3 {
+  height: 1687px;
+  background: url("../images/introduce/banner3.png") no-repeat;
+  background-size: cover;
+  padding-top: 64px;
+}
+
+body .introduce .banner3 .title {
+  width: 96px;
+  height: 203px;
+  border: 2px solid #97744a;
+  margin: 0 auto;
+  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  position: relative;
+}
+
+body .introduce .banner3 .title > div {
+  width: 96px;
+  height: 203px;
+  border: 1px solid #97744a;
+  position: absolute;
+  top: -8px;
+  left: -7px;
+}
+
+body .introduce .banner3 .content {
+  width: 1203px;
+  margin: 0 auto;
+  font-weight: 100;
+  color: #616161;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+
+body .introduce .banner3 .pic {
+  width: 1203px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+body .introduce .banner3 .pic .box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+body .introduce .banner3 .pic .box .pic1 {
+  width: 513px;
+  height: 226px;
+  background: url("../images/introduce/banner3pic-1.png") no-repeat;
+  background-size: contain;
+}
+
+body .introduce .banner3 .pic .box .pic2 {
+  width: 513px;
+  height: 226px;
+  background: url("../images/introduce/banner3pic-2.png") no-repeat;
+  background-size: contain;
+}
+
+body .introduce .banner3 .pic .pic3 {
+  width: 671px;
+  height: 470px;
+  background: url("../images/introduce/banner3pic-3.png") no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=introduce.css.map */

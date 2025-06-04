@@ -1,0 +1,104 @@
+body {
+  margin: 0 auto;
+}
+body .contactus {
+  margin: 0 auto;
+  padding-top: 77px;
+  width: 1200px;
+}
+body .contactus .title {
+  width: 247px;
+  height: 61px;
+  margin: 0 auto;
+  background-color: #d7292b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-size: 30px;
+}
+body .contactus .title > div {
+  width: 271px;
+  height: 58px;
+  border: 1px solid #97744a;
+  position: absolute;
+  top: -10px;
+  left: -11px;
+  z-index: -1;
+}
+body .contactus .contactinfos {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 167px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-top: 68px;
+  margin-bottom: 84px;
+  gap: 150px;
+}
+body .contactus .contactinfos .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+body .contactus .contactinfos .list .icon {
+  width: 52px;
+  height: 52px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .contactus .contactinfos .list.phone .icon {
+  background-image: url("../images/contactus/contact_icon1.png");
+}
+body .contactus .contactinfos .list.email .icon {
+  background-image: url("../images/contactus/contact_icon2.png");
+}
+body .contactus .contactinfos .list.address .icon {
+  background-image: url("../images/contactus/contact_icon3.png");
+}
+body .contactus .contactinfos .list .info > p {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 28px;
+}
+body .contactus .busway {
+  margin-bottom: 50px;
+}
+body .contactus .busway > p {
+  font-size: 14px;
+  font-weight: 400;
+}
+body .contactus .map {
+  width: 1200px;
+  height: 495px;
+  background: url("../images/contactus/map.png");
+  background-size: cover;
+  margin-bottom: 150px;
+}
+
+.contactusbody .banner {
+  height: 610px;
+  min-height: 400px;
+  background: url("../images/contactus/contactusbanner.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .contactusbody .banner {
+    height: 400px;
+    background-attachment: scroll;
+  }
+}
+.contactusbody .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=contactus.css.map */

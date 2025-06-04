@@ -1,0 +1,129 @@
+// 变量定义
+$primary-color: #d7292b;
+$border-color: #97744a;
+$text-color-white: white;
+$black: #000000;
+
+// 基础样式
+body {
+  margin: 0 auto;
+
+  .contactus {
+    margin: 0 auto;
+    padding-top: 77px;
+    width: 1200px;
+
+    // 标题区域
+    .title {
+      width: 247px;
+      height: 61px;
+      margin: 0 auto;
+      background-color: $primary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: $text-color-white;
+      font-size: 30px;
+
+      > div {
+        width: 271px;
+        height: 58px;
+        border: 1px solid $border-color;
+        position: absolute;
+        top: -10px;
+        left: -11px;
+        z-index: -1;
+      }
+    }
+
+    // 联系信息区域
+    .contactinfos {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 167px;
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+      margin-top: 68px;
+      margin-bottom: 84px;
+      gap: 150px;
+
+      .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        .icon {
+          width: 52px;
+          height: 52px;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &.phone .icon {
+          background-image: url("../images/contactus/contact_icon1.png");
+        }
+
+        &.email .icon {
+          background-image: url("../images/contactus/contact_icon2.png");
+        }
+
+        &.address .icon {
+          background-image: url("../images/contactus/contact_icon3.png");
+        }
+
+        .info > p {
+          margin: 0 auto;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    // 公交路线
+    .busway {
+      margin-bottom: 50px;
+
+      > p {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    // 地图区域
+    .map {
+      width: 1200px;
+      height: 495px;
+      background: url("../images/contactus/map.png");
+      background-size: cover;
+      margin-bottom: 150px;
+    }
+  }
+}
+
+// Banner区域
+.contactusbody .banner {
+  height: 610px;
+  min-height: 400px;
+  background: url("../images/contactus/contactusbanner.png") no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @media (max-width: 768px) {
+    height: 400px;
+    background-attachment: scroll;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

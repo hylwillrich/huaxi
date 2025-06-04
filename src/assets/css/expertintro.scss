@@ -1,0 +1,117 @@
+.expertintro-page {
+  margin: 0 auto;
+}
+.expertintro {
+  margin: 0 auto;
+  .topbanner {
+    height: 610px;
+    background: url("../images/expertintro/intro-banner1.png") no-repeat;
+    background-size: cover;
+  }
+  .expert-intro {
+    background-color: #fbfbf9;
+    padding-top: 90px;
+    .title {
+      width: 190px;
+      height: 40px;
+      border: 1px solid #9d7c55;
+      margin: 0 auto;
+      margin-bottom: 80px;
+      h1 {
+        background-color: #d7292b;
+        width: 180px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 100;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+    }
+    .department {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      border-bottom: 1px solid #b5b5b5;
+      span {
+        padding: 10px 5px 10px 5px;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition:
+          border-bottom 0.5s ease-in-out,
+          color 0.5s ease-in-out;
+        &.select {
+          color: #e60012;
+          border-bottom: 2px solid #e60012;
+        }
+        &:hover {
+          color: #e60012;
+          border-bottom: 2px solid #e60012;
+        }
+      }
+    }
+    .experts {
+      margin: 0 auto;
+      margin-top: 50px;
+      .dp {
+        width: 905px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 78px;
+        padding-bottom: 150px;
+        .infos {
+          width: 400px;
+          height: 300px;
+          border: 1px solid grey;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 5px 0 5px;
+          cursor: pointer;
+          transition: box-shadow 0.3s ease-in-out;
+          &:hover {
+            box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+          }
+          .pic {
+            width: 225px;
+            height: 285px;
+            background: url("../images/expertintro/dc1.png") no-repeat;
+            background-size: cover;
+            margin: 0;
+          }
+          .description {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-right: 20px;
+            .line {
+              height: 200px;
+              border-left: 1px solid black;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.expertintro .expert-intro .experts .dp .infos .description p,
+.expertintro .expert-intro .experts .dp .infos .description h4 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: 0 auto;
+  color: #333333;
+}
+/*# sourceMappingURL=expertintro.css.map */
