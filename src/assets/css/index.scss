@@ -235,6 +235,7 @@ h3 {
     scale: 90%;
     text-align: center;
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
     & > h1 {
       font-size: 20px;
       margin-top: 90px;
@@ -282,9 +283,7 @@ button {
 .control > .right:hover {
   background-color: #d7292b;
   color: white;
-  transition:
-    background-color 0.5s ease,
-    color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 .news {
   height: 740px;
@@ -477,5 +476,11 @@ p {
     border: none;
     float: left;
   }
+}
+.doctor-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */

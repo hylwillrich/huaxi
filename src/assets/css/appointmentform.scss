@@ -1,0 +1,290 @@
+// 预约表单样式
+.appointment-form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+
+  .form-container {
+    background: white;
+    border-radius: 12px;
+    width: 650px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-height: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+
+    .form-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #f0f0f0;
+
+      h3 {
+        color: #3a7bd5;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      button {
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: #888;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+
+    .two-column-form {
+      display: flex;
+      gap: 30px;
+      position: relative;
+      padding-bottom: 70px; // 为底部按钮留出空间
+
+      .form-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &:first-child {
+          flex: 0.8; // 左侧稍窄
+        }
+
+        &:last-child {
+          flex: 1.2; // 右侧稍宽
+        }
+      }
+
+      .form-group {
+        margin-bottom: 18px;
+        position: relative;
+
+        label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: 500;
+          color: #555;
+          font-size: 15px;
+        }
+
+        input,
+        select {
+          width: 100%;
+          max-width: 280px;
+          padding: 10px 12px;
+          border: 1px solid #e0e0e0;
+          border-radius: 6px;
+          font-size: 15px;
+          transition: all 0.2s;
+          background-color: #f9f9f9;
+          box-sizing: border-box;
+
+          &:focus {
+            border-color: #3a7bd5;
+            box-shadow: 0 0 0 2px rgba(58, 123, 213, 0.2);
+            outline: none;
+            background-color: white;
+          }
+        }
+
+        input[type="datetime-local"] {
+          width: 280px;
+        }
+      }
+
+      .form-actions {
+        position: absolute;
+        bottom: -20px;
+        right: 30px;
+        display: flex;
+        gap: 15px;
+        padding: 15px 0;
+
+        button {
+          padding: 10px 25px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 15px;
+          font-weight: 500;
+          transition: all 0.2s;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+          &[type="submit"] {
+            background: #3a7bd5;
+            color: white;
+            border: none;
+
+            &:hover {
+              background: #2c6bc7;
+              transform: translateY(-1px);
+            }
+          }
+
+          &[type="button"] {
+            background: white;
+            border: 1px solid #ddd;
+            color: #555;
+
+            &:hover {
+              background: #f5f5f5;
+              border-color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 医生详情样式
+.doctor-details {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  h4 {
+    margin: 0 0 15px 0;
+    color: #3a7bd5;
+    font-size: 16px;
+  }
+
+  .doctor-info {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+    .doctor-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid #eee;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .doctor-text {
+      flex: 1;
+
+      p {
+        margin: 8px 0;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      strong {
+        color: #3a7bd5;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+// 状态文本样式
+.loading-text,
+.error-text,
+.empty-text {
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.loading-text {
+  color: #666;
+  background: #f5f5f5;
+}
+
+.error-text {
+  color: #e74c3c;
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+}
+
+.empty-text {
+  color: #666;
+  font-style: italic;
+  background: #f9f9f9;
+}
+
+.select:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #f5f5f5;
+}
+
+// 滚动条样式
+.form-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.form-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.form-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+// 响应式样式
+@media (max-width: 768px) {
+  .two-column-form {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 60px;
+
+    .form-column:first-child,
+    .form-column:last-child {
+      flex: 1;
+    }
+
+    .form-group {
+      input,
+      select,
+      input[type="datetime-local"] {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .form-actions {
+      position: static;
+      justify-content: flex-end;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #f0f0f0;
+    }
+  }
+
+  .doctor-details {
+    width: 100%;
+  }
+}
